@@ -1,0 +1,22 @@
+{
+  "name": "advanced-css-sass-website-uz-voyage",
+  "version": "1.0.0",
+  "description": "Advanced CSS/SASS/SCSS website page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mralimov/Advanced-CSS-SASS-Website-Uz-Voyage.git"
+  },
+  "author": "Donnie Alimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mralimov/Advanced-CSS-SASS-Website-Uz-Voyage/issues"
+  },
+  "homepage": "https://github.com/mralimov/Advanced-CSS-SASS-Website-Uz-Voyage#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
