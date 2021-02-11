@@ -5,14 +5,14 @@
     
 }
 
-[class^=col-] {
+// [class^=col-] {
    
-    float: left;
+//     float: left;
 
-    &:not(:last-child){
-        margin-right: $gutter-horizontal;
-    }
- }
+//     &:not(:last-child){
+//         margin-right: $gutter-horizontal;
+//     }
+//  }
    
 @include clearfix;
 
