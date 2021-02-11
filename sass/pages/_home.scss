@@ -5,17 +5,20 @@
     
 }
 
-// [class^=col-] {
-   
-//     float: left;
 
-//     &:not(:last-child){
-//         margin-right: $gutter-horizontal;
-//     }
-//  }
-   
-@include clearfix;
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+         rgba($color-primary-light, 0.8), 
+         rgba($color-primary-dark, 0.8)), 
+    url(../img/nat-4.jpg);
+    background-size: cover;
 
-.col-1-of-2 {
-    width: calc((100% - #{$gutter-horizontal}) / 2);
-  }
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    &>* {
+        transform: skewY(7deg);
+    }
+}
