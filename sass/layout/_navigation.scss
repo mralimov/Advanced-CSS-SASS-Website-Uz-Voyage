@@ -114,5 +114,26 @@
         left: 0;
         transition: all .2s;
     }
+    //THIS SLOWLY SHOWS ANIMATION transform-origin: right left....;
+    &::before {top: -.8rem;}
+    &::after {top: .8rem;}
+}
+&__button:hover &__icon::before {top: -1rem}
+
+&__button:hover &__icon::after {top: 1rem}
+
+&__checkbox:checked + &__button &__icon{
+background-color: transparent;
+}
+
+&__checkbox:checked + &__button &__icon::before{
+    top: 0;
+   transform: rotate(135deg);
+    }
+
+&__checkbox:checked + &__button &__icon::after{
+        top: 0;
+        transform: rotate(-135deg);
+        }
     
     }
