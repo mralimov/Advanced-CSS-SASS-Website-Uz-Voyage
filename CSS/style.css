@@ -602,7 +602,7 @@ body {
   color: #55c57a;
   transform: translateX(1rem); }
 
-__checkbox:checked ~ .navigation__background {
+.navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
