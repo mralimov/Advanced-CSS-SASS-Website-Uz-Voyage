@@ -12,5 +12,15 @@ html {
 
 body {
         //defines what 1 rem is default-16px
-    box-sizing: border-box;
+    box-sizing: border-box;//1rem = 10px / 16px = 62.5%
+
+    @include respond(tab-land) {//First because it requires width < 1200
+        font-size: 56.25%; //56.25% means 1rem = 9px
+    }
+    @include respond(tab-port) { //Second because it requires width < 900
+        font-size: 50%; //50% means 1rem = 8px
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; // 75% means 1rem = 12px
+    }
 }
