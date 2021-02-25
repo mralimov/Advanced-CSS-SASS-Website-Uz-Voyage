@@ -179,12 +179,13 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 1 1rem 2rem, rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem, rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
-    transform: scaleX(1.2) scaleY(1.2);
+    transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem, rgba(0, 0, 0, 0.2); }
 
@@ -424,13 +425,13 @@ body {
 
 .bg-video {
   position: absolute;
-  overflow: hidden;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15; }
+  opacity: .15;
+  overflow: hidden; }
   .bg-video__content {
     height: 100%;
     width: 100%;
