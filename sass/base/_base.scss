@@ -7,13 +7,10 @@
 }
 
 html {
-    font-size: 62.5%;
-}
+    font-size: 62.5%; //1rem = 10px / 16px = 62.5%
 
-body {
-        //defines what 1 rem is default-16px
-    box-sizing: border-box;//1rem = 10px / 16px = 62.5%
-
+    
+    //HIGHER MEDIA QUERY GOES TO TOP / FOR MOBILE OTHER WAY AROUND
     @include respond(tab-land) {//First because it requires width < 1200
         font-size: 56.25%; //56.25% means 1rem = 9px
     }
@@ -23,4 +20,20 @@ body {
     @include respond(big-desktop) {
         font-size: 75%; // 75% means 1rem = 12px
     }
+}
+
+body {
+
+    box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
 }
